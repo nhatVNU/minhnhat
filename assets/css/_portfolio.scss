@@ -1,0 +1,155 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 60px;
+        .portfolio-filter {
+            &__list {
+                display: flex;
+                flex-direction: row;
+                .portfolio-filter__item {
+                    margin-left: 25px;
+
+                    a {
+                        color: #767676;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        transition: all 0.25s ease-in-out;
+                        letter-spacing: 1.5px;
+                    }
+
+                    @media (max-width: 992px) {
+                        margin-left: 0;
+                        margin-right: 25px;
+                    }
+
+                    &.active {
+                        a {
+                            color: #000;
+                            font-weight: 600;
+                        }
+                    }
+                    &:hover {
+                        a {
+                            letter-spacing: 3px;
+                            color: #000;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 992px) {
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__galery {
+        &-list {
+            display: flex;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 50px;
+
+            li {
+                div {
+                    width: 100%;
+                    height: 280px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 5px 2px #c9c9c9;
+                    background-color: #fff;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #fff;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                        transition: transform 0.25s ease-in-out;
+                    }
+
+                    @media (max-width: 1400px) {
+                        height: 225px;
+                    }
+
+                    @media (max-width: 992px) {
+                        height: 100%;
+                    }
+                }
+
+                @media (min-width: 993px) {
+                    #documentation-page:hover {
+                        content: url(../../images/documentationPageGIF.gif);
+                    }
+                    #room-homepage:hover {
+                        content: url(../../images/roomPageGIF.gif);
+                    }
+                    #loopstudio-page:hover {
+                        content: url(../../images/VRPageGIF.gif);
+                    }
+                    #simple-paint:hover {
+                        content: url(../../images/SimplePaintGDIGIF.gif);
+                    }
+                    #meme-generator:hover {
+                        content: url(../../images/memeGenGIF.gif);
+                    }
+                    #paint:hover {
+                        content: url(../../images/paintGIF.gif);
+                    }
+                    #bad-apple:hover {
+                        content: url(../../images/badAppleGIF.gif);
+                    }
+                    #weather-forecast:hover {
+                        content: url(../../images/weatherForecastGIF.gif);
+                    }
+                    #calculator:hover {
+                        content: url(../../images/calculatorGIF.gif);
+                    }
+                    #hangman:hover {
+                        content: url(../../images/hangmanGIF.gif);
+                    }
+                    #flappy-bird:hover {
+                        content: url(../../images/flappyGIF.gif);
+                    }
+                    #social-responsibility:hover {
+                        content: url(../../images/social-responsibilityGIF.gif);
+                    }
+                    #snake-the-game:hover {
+                        content: url(../../images/snake-the-gameGIF.gif);
+                    }
+                    #flappy-bird-youtube:hover {
+                        content: url(../../images/flappy-bird-youtubeGIF.gif);
+                    }
+                }
+            }
+
+            @media (max-width: 992px) {
+                grid-template-columns: auto;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding: 0 50px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 20px 0;
+    }
+}

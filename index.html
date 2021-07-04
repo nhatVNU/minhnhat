@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Minh Nhat</title>
+        <script src="https://use.fontawesome.com/eb06b48c58.js"></script>
+        <link rel="stylesheet" href="./assets/css/index.css" />
+        <link rel="shortcut icon" href="./images/avt-circle.webp" />
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0"
+            nonce="TY6PFMoA"
+        ></script>
+    </head>
+    <body>
+        <div id="circle-cursor">
+            <div id="circle-cursor-dot"></div>
+        </div>
+        <span class="project-tooltip"></span>
+        <div class="preload">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
+        <div id="loading">
+            <img
+                id="loading-image"
+                src="./images/loading.svg"
+                alt="Loading Screen"
+            />
+        </div>
+        <div class="description-modal">
+            <span class="description-modal__close fa fa-times-circle-o"></span>
+            <div class="description-modal__details">
+                <div class="description-modal__details-knowledge">
+                    <div class="knowledge-col">
+                        <h3 class="knowledge-col__title">education</h3>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">
+                                University Of Technology - Vietnam National
+                                University
+                            </h3>
+                            <p class="info-year">
+                                Student <span>•Sep 2020 - Present</span>
+                            </p>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">NTMK Senior High School</h3>
+                            <p class="info-year">
+                                Student <span>•2017 - 2020</span>
+                            </p>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">Vinh Hiep Junior High School</h3>
+                            <p class="info-year">
+                                Student <span>•2013 - 2017</span>
+                            </p>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">
+                                Vinh Hiep Primary High School
+                            </h3>
+                            <p class="info-year">
+                                Student <span>•2008 - 2013</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="knowledge-col">
+                        <h3 class="knowledge-col__title">skills</h3>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">General</h3>
+                            <div class="info-tags">
+                                <span class="tag">Front-end Dev</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Software Engineering</span>
+                            </div>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">Design</h3>
+                            <div class="info-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Adobe Photoshop</span>
+                                <span class="tag">Balsamiq</span>
+                            </div>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">Engineering</h3>
+                            <div class="info-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">React Js</span>
+                                <span class="tag">Jquery</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-modal__details-certificates">
+                   
+                    
+                </div>
+            </div>
+        </div>
+        <div class="project-modal">
+            <span class="modal-close fa fa-times-circle"></span>
+            <iframe class="project-modal__iframe" src=""></iframe>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__inner">
+                <a href="./index.html"
+                    ><h3 class="mobile-menu__inner-logo">MINH NHAT</h3></a
+                >
+                <div class="mobile-menu__inner-menu">
+                    <ul class="menu-list">
+                        <li>
+                            <button class="button-darkmode">
+                                <span
+                                    class="fa fa-sun-o button-darkmode-icon"
+                                ></span>
+                            </button>
+                        </li>
+                        <li class="menu-list__item" data-filter="home">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-home"></span
+                            ></a>
+                        </li>
+                        <li class="menu-list__item" data-filter="about">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-id-card"></span
+                            ></a>
+                        </li>
+                        <li class="menu-list__item" data-filter="portfolio">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-briefcase"></span
+                            ></a>
+                        </li>
+                        <li class="menu-list__item" data-filter="contact">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-envelope"></span
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="left-part">
+                <div class="left-part__inner">
+                    <a href="./index.html"
+                        ><div class="left-part__inner-logo">
+                            <h3>MINH NHAT</h3>
+                        </div></a
+                    >
+                    <div class="left-part__inner-menu">
+                        <ul class="menu-list">
+                            <li class="menu-list__item" data-filter="home">
+                                <a href="#" class="item-link">Home</a>
+                            </li>
+                            <li class="menu-list__item" data-filter="about">
+                                <a href="#" class="item-link">About</a>
+                            </li>
+                            <li class="menu-list__item" data-filter="portfolio">
+                                <a href="#" class="item-link">Portfolio</a>
+                            </li>
+                            <li class="menu-list__item" data-filter="contact">
+                                <a href="#" class="item-link">Contact</a>
+                            </li>
+                            <li>
+                                <button class="button-darkmode-switch">
+                                    <span class="fa fa-sun-o"></span>
+                                    <div class="button-darkmode-tray">
+                                        <div
+                                            class="button-darkmode-switcher"
+                                        ></div>
+                                    </div>
+                                    <span class="fa fa-moon-o"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-part__inner-copyright">
+                        <p class="menu-copyright__text">
+                            © 2021 Created by Tran Minh Nhat
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="section home" id="home">
+                    <div class="home__content">
+                        <div class="home__content-avt"></div>
+                        <div class="home__content-details">
+                            <h3 class="home__content-details__name">
+                                TRAN MINH NHAT
+                            </h3>
+                            <p class="home__content-details__job">
+                                Creative Front-end Developer based in Ho Chi
+                                Minh City
+                            </p>
+                            <div class="home__content-details__social">
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/profile.php?id=100013896646198"
+                                            target="_blank"
+                                        >
+                                            <span
+                                                class="fa fa-facebook"
+                                                aria-hidden="true"
+                                            ></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.youtube.com/channel/UCDXAaW89SYIbC2mBbsg40Ug"
+                                            target="_blank"
+                                        >
+                                            <span
+                                                class="fa fa-youtube"
+                                                aria-hidden="true"
+                                            ></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://github.com/nhatVNU"
+                                            target="_blank"
+                                        >
+                                            <span
+                                                class="fa fa-github"
+                                                aria-hidden="true"
+                                            ></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-player">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+                <div class="section about" id="about">
+                    <div class="about__main">
+                        <img
+                            src="./images/cover.webp"
+                            alt="Tran Minh Nhat"
+                            class="about__main-img"
+                        />
+                    </div>
+                    <div class="about__description">
+                        <div class="about__description-name">
+                            Tran Minh Nhat & Front-end Developer
+                        </div>
+                        <div class="about__description-inner">
+                            <div class="inner-left">
+                                <p>
+                                    Hi ! My name is Tran Minh Nhat, and I am a
+                                    first year student at Ho Chi Minh
+                                    University Of Technology. I have a strong
+                                    passion about Front-end web development, and
+                                    I've learnt Front-end for eight months and I
+                                    got some certificates of HTML-CSS-JS and
+                                    Front-end frameworks. One of my favorite
+                                    quotes is from Linus Torvalds: “Talk is
+                                    cheap. Show me the code !”.
+                                </p>
+                                <a href="#">
+                                    <div class="button learn-more">
+                                        Learn More
+                                    </div>
+                                </a>
+                                <a
+                                    href="https://drive.google.com/file/d/1sirBrG0T4Qr4lsvR04_SuGXgIJRnn9O_/view"
+                                    target="_blank"
+                                >
+                                    <div class="button">Download CV</div>
+                                </a>
+                            </div>
+                            <div class="inner-right">
+                                <ul>
+                                    <li>
+                                        <p><span>Birthday:</span>20/02/2002</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Age:</span>19</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Address:</span>Ho Chi Minh
+                                            City
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Email:</span
+                                            >tranminhnhat20022002@gmail.com
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><span>Phone:</span>(+84)335629597</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Study:</span>Vietnam National
+                                            University - University Of Technology
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section portfolio" id="portfolio">
+                    <div class="portfolio__title">
+                        <div class="title-flex">
+                            <div class="title-flex__left">
+                                <span>PORTFOLIO</span>
+                                <h3>Creative Portfolio</h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-filter">
+                            <ul class="portfolio-filter__list">
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="all"
+                                >
+                                    <a href="#">all</a>
+                                </li>
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="page"
+                                >
+                                    <a href="#">page</a>
+                                </li>
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="app"
+                                >
+                                    <a href="#">app</a>
+                                </li>
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="others"
+                                >
+                                    <a href="#">others</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio__galery">
+                        <ul class="portfolio__galery-list">
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-url="https://nhatvnu.github.io/DocumentationPage-main/"
+                                data-name="Documentation Page"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="documentation-page"
+                                        src="./images/documentation-page-bg.webp"
+                                        alt="Documentation Page"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/ROOM - HOMEPAGE/index.html"
+                                data-name="Room Homepage"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="room-homepage"
+                                        src="./images/room-homepage-bg.webp"
+                                        alt="Room Homepage"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/LOOPSTUDIOS-PAGE/index.html"
+                                data-name="Loop Studio Page"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="loopstudio-page"
+                                        src="./images/loop-studio-bg.webp"
+                                        alt="Loopstudio Page"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="https://www.youtube.com/embed/EPlcAJn45Mo"
+                                data-name="Simple Paint GDI"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="simple-paint"
+                                        src="./images/SimplePaintGDI.webp"
+                                        alt="Simple Paint GDI"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="https://tranphuongdinh.github.io/MemeGenerator/"
+                                data-name="Meme Generator"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="meme-generator"
+                                        src="./images/meme-gen-bg.webp"
+                                        alt="Meme Generator"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="https://tranphuongdinh.github.io/SimplePaint/"
+                                data-name="Simple Paint"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="paint"
+                                        src="./images/paint-bg.webp"
+                                        alt="Paint"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDinhRamos.IClow%2Fvideos%2F2887868274829497%2F&show_text=true&appId"
+                                data-name="Bad Apple"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="bad-apple"
+                                        src="./images/badApple-bg.webp"
+                                        alt="Bad Apple"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/WEATHER FORECAST APP/index.html"
+                                data-name="Weather Forecast"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="weather-forecast"
+                                        src="./images/weatherForecast-bg.webp"
+                                        alt="Weather Forecast"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="https://tranphuongdinh.github.io/Calculator/"
+                                data-name="Calculator"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="calculator"
+                                        src="./images/calculator-bg.webp"
+                                        alt="Calculator"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/HANGMAN/index.html"
+                                data-name="Hangman"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="hangman"
+                                        src="./images/hangman-bg.webp"
+                                        alt="Hangman"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/FLAPPY BIRD/index.html"
+                                data-name="Flappy Bird"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="flappy-bird"
+                                        src="./images/flappy-bird-bg.webp"
+                                        alt="Flappy Bird"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="
+                                    all
+                                    others
+                                    galery-item galery-item-tooltip
+                                "
+                                data-url="https://www.youtube.com/embed/dPnHg6OUIIU"
+                                data-name="Social Responsibility - WHAT AND WHY?"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="social-responsibility"
+                                        src="./images/social-responsibility.webp"
+                                        alt="Social Responsibility - WHAT AND WHY?"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="
+                                    all
+                                    others
+                                    galery-item galery-item-tooltip
+                                "
+                                data-url="https://www.youtube.com/embed/OfrRXK3a6pw"
+                                data-name="Project Snake - The Game"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="snake-the-game"
+                                        src="./images/snake-the-game.webp"
+                                        alt="Snake The Game"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="
+                                    all
+                                    others
+                                    galery-item galery-item-tooltip
+                                "
+                                data-url="https://www.youtube.com/embed/PdHPwGvnvzI"
+                                data-name="Coding Flappy Bird in 60 minutes"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        id="flappy-bird-youtube"
+                                        src="./images/flappy-bird-youtube.webp"
+                                        alt="Coding Flappy Bird in 60 minutes"
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section contact" id="contact">
+                    <div class="title-flex">
+                        <div class="title-flex__left">
+                            <span>CONTACT</span>
+                            <h3>Get in Touch</h3>
+                        </div>
+                    </div>
+                    <div class="contact__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1586865038053!2d106.79692831462344!3d10.875532492254338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCBDxqEgc-G7nyBMaW5oIFRydW5nLCBUaOG7pyDEkOG7qWMsIMSQSFFHIFRQSENNLg!5e0!3m2!1svi!2s!4v1621658184694!5m2!1svi!2s"
+                            allowfullscreen="true"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                    <div class="contact__form">
+                        <form
+                            class="contact-form"
+                            action="https://formspree.io/f/mqkwprkn"
+                            method="POST"
+                            target="_blank"
+                        >
+                            <input
+                                class="input-text"
+                                type="text"
+                                name="name"
+                                placeholder="Your name..."
+                                required
+                            />
+                            <input
+                                class="input-text"
+                                type="email"
+                                name="_replyto"
+                                placeholder="Your email..."
+                                required
+                            />
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Your Message..."
+                                required
+                            ></textarea>
+                            <input
+                                class="button button-submit"
+                                type="submit"
+                                value="Send Message"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+        <script src="./assets/js/music-player.js"></script>
+    </body>
+</html>
